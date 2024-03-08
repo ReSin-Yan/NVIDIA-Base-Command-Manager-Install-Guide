@@ -59,12 +59,33 @@ Kerenl可以選擇安裝後再入的模組
  | 設定 |  |
 |-------|-------|
 | clusterName | BCMCluster |
-| Organization name | BCMCluster |
-| ComputeNode | min, 4GB RAM, 80GB DISK |
-| Lincese | [申請](https://customer.brightcomputing.com/Customer-Login) |
-
+| Organization name | resinlab |
+| Administrator email | a127504443@gmail.com |
+| Time zone | +8:00 Asia/Taipei |
+| Time servers | default |
+| Nameserver | 8.8.8.8 |
+| Search domains | None |
+| environment modeules | Tcl moduels |
 圖片8  
 
+HPC workload目前支援三種格式  
+slurm,ibm spectrum lsf, Unuva Grid Engine  
+選擇slurm  
+其餘兩種皆需要額外的授權  
+IBM spectrun LSF專門為高性能排程而設計  
+Univa Grid Engine更為適合在混合雲環境中  
+圖片9  
+
+網路拓樸圖根據自身網路狀況做選取  
+通常情況下為1或是2  
+更加建議的選擇為1，網路之間的連線可以錯開  
+並且computenode的連線方式都會通過route的方式連線出去  
+圖片10
+
+
+設定Headnode基本設定 
+包含hostname跟密碼，預設帳號為`root`  
+圖片11
 
 ```
 
