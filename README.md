@@ -21,41 +21,37 @@ Head可以準備多台搭建成HA環境
 #### 申請授權,ISO下載  
 #### 正式安裝  
 將ISO掛給虛擬機    
-圖片1 
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(1).png)   
 
 
 選擇圖形安裝(建議選項)  
 安裝種類分為四種，其中圖形安裝是比較建議的方式  
-圖片2 
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(2).png)   
 
 選擇開始安裝   
 
 
 同意NVIDIA EULA  
-圖片3  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(3).png)   
 
 
 同意ubuntu授權  
-圖片4  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(4).png)   
 
-同意ubuntu授權  
-圖片4  
 
 Kerenl可以選擇安裝後再入的模組  
 這邊選擇預設即可  
-圖片5  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(5).png)   
 
 接下來可以看到硬體的資訊  
-圖片6  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(6).png)   
 
 選擇有掛階ISO的磁區  
 建議可以選擇check  
-圖片7  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(7).png)   
 
 接下來設定此head的基本資訊  
 以下皆為測試環境資訊
-``  
-
  | 設定 |  |
 |-------|-------|
 | clusterName | BCMCluster |
@@ -66,7 +62,7 @@ Kerenl可以選擇安裝後再入的模組
 | Nameserver | 8.8.8.8 |
 | Search domains | None |
 | environment modeules | Tcl moduels |
-圖片8  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(8).png)   
 
 HPC workload目前支援三種格式  
 slurm,ibm spectrum lsf, Unuva Grid Engine  
@@ -74,29 +70,28 @@ slurm,ibm spectrum lsf, Unuva Grid Engine
 其餘兩種皆需要額外的授權  
 IBM spectrun LSF專門為高性能排程而設計  
 Univa Grid Engine更為適合在混合雲環境中  
-圖片9  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(9).png)   
 
 網路拓樸圖根據自身網路狀況做選取  
 通常情況下為1或是2  
 更加建議的選擇為1，網路之間的連線可以錯開  
 並且computenode的連線方式都會通過route的方式連線出去  
-圖片10
-
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(10).png)   
 
 設定Headnode基本設定 
 包含hostname跟密碼，預設帳號為`root`  
 Hardward manufacturer，如果headnode裝在實體機上面選擇對應的廠商，沒有就選擇其他  
-圖片11
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(11).png)   
 
 設定Conmpute基本設定 
 包含Racks數量、node數量、nodestart數量、node基本名稱設定    
 此設定可以在之後更改，這邊並不會直接執行部屬    
-圖片12
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(12).png)   
 
 BMC基本設定 
 如果底層是實體機，那麼應該就會有如IPMI,iDRAC,iLO,CIMI這一種腳色  
 測試環境使用虛擬機，所以兩個都選擇NO  
-圖片13
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(13).png)   
 
 網路設定 
 由於我們選的是type1  
@@ -104,25 +99,27 @@ head跟compute之間的連線是通過internalnet，所以其實在本測試環�
 internalnet配置給head跟compute，其中internalnet會自動配置DHCP，所以需要給定範圍  
 本測試環境中internal會另外拉一個portgroup出來，所以不需要理會IP是否實際可以連線  
 在同一個portgroup中可以連線即可  
-圖片14 15  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(14).png)   
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(15).png)   
 
 網路設定(續)   
 設定headnode網路分別輸入兩張網卡的interface，以及network，ipaddress  
 computenode選擇internalnet(假的那段)  
-圖片16 17
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(16).png)   
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(17).png)   
 
 DISK設定layout   
 選擇安裝的硬體區    
-圖片18
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(18).png)   
 
 DISK設定layout   
 這邊可以定義head跟compute部屬之後DISK的行為  
 都可以在之後進行修改  
 測試環境都選one big partion  
-圖片19  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(19).png)   
 
 確定完所有資訊之後點選開始    
-圖片20  
+![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(20).png)   
 
 ```
 
