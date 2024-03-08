@@ -8,7 +8,7 @@
 以下是一些準備項目以及其說明  
  | 準備項目 | 規格 | 說明 | 
 |-------|-------|-------| 
-| HeadNode *1 | min, 4GB RAM, 80GB DISK | 此節點作為head節點，會通過PXE BOOT的方式將RAM DISK部屬出去，所有的內容都會放在head，包含ROUTE |
+| HeadNode *1 | min, 4GB RAM, 80GB DISK, NIC*2 | 此節點作為head節點，會通過PXE BOOT的方式將RAM DISK部屬出去，所有的內容都會放在head，包含ROUTE |
 |  | Production, 24cores 128GB RAM, 512GB DISK |  |
 | ComputeNode | min, 4GB RAM, 80GB DISK | 此節點作為運算節點，如果環境中具備GPU的節點建議建立成Compute節點 |
 | Lincese | [申請](https://customer.brightcomputing.com/Customer-Login) | 申請給出的授權總共為8node |
