@@ -85,7 +85,44 @@ Univa Grid Engine更為適合在混合雲環境中
 
 設定Headnode基本設定 
 包含hostname跟密碼，預設帳號為`root`  
+Hardward manufacturer，如果headnode裝在實體機上面選擇對應的廠商，沒有就選擇其他  
 圖片11
+
+設定Conmpute基本設定 
+包含Racks數量、node數量、nodestart數量、node基本名稱設定    
+此設定可以在之後更改，這邊並不會直接執行部屬    
+圖片12
+
+BMC基本設定 
+如果底層是實體機，那麼應該就會有如IPMI,iDRAC,iLO,CIMI這一種腳色  
+測試環境使用虛擬機，所以兩個都選擇NO  
+圖片13
+
+網路設定 
+由於我們選的是type1  
+head跟compute之間的連線是通過internalnet，所以其實在本測試環境中externalnet只會配置給headnode  
+internalnet配置給head跟compute，其中internalnet會自動配置DHCP，所以需要給定範圍  
+本測試環境中internal會另外拉一個portgroup出來，所以不需要理會IP是否實際可以連線  
+在同一個portgroup中可以連線即可  
+圖片14 15  
+
+網路設定(續)   
+設定headnode網路分別輸入兩張網卡的interface，以及network，ipaddress  
+computenode選擇internalnet(假的那段)  
+圖片16 17
+
+DISK設定layout   
+選擇安裝的硬體區    
+圖片18
+
+DISK設定layout   
+這邊可以定義head跟compute部屬之後DISK的行為  
+都可以在之後進行修改  
+測試環境都選one big partion  
+圖片19  
+
+確定完所有資訊之後點選開始    
+圖片20  
 
 ```
 
