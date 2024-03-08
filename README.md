@@ -1,5 +1,6 @@
 # NVIDIA-Base-Command-Manager-Install-Guide
- 
+## Base command簡易說明    
+
 ## 環境準備以及說明  
 
 #### 需要準備之項目   
@@ -12,13 +13,20 @@
 |  | Production, 24cores 128GB RAM, 512GB DISK |  |
 | ComputeNode | min, 4GB RAM, 80GB DISK | 此節點作為運算節點，如果環境中具備GPU的節點建議建立成Compute節點 |
 | Lincese | [申請](https://customer.brightcomputing.com/Customer-Login) | 申請給出的授權總共為8node |
-| launch method | Launch agents via ssh | 啟動此節點的方式 |
-| Host | your VM IP | 連線機器的IP |
 
 Head可以準備多台搭建成HA環境  
 測試環境採用TYPE1的網路架構，並且在HEAD配置兩張網卡  
 
-#### Gitlab建置   
+## 正式安裝             
+#### 申請授權,ISO下載  
+#### 正式安裝  
+將ISO掛給虛擬機    
+圖片1  
+選擇圖形安裝(建議選項)  
+安裝種類分為四種，其中圖形安裝是比較建議的方式  
+圖片2  
+選擇開始安裝  
+
 ```
 
 ```
