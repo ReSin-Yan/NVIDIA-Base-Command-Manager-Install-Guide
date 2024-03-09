@@ -1,4 +1,4 @@
-# NVIDIA-Base-Command-Manager-Install-Guide
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/895763bc-05c4-447e-bc6e-bf53c2ef01e1)# NVIDIA-Base-Command-Manager-Install-Guide
 ## Base command簡易說明    
 
 ## 環境準備以及說明  
@@ -125,7 +125,21 @@ DISK設定layout
 
 ```
 
-#### 正式安裝  
+#### 正式安裝 
+
+可以看到三個連結  
+其中Base view 是給管理員使用  
+User Portal 是給使用者使用  
+Ceph Dashboard讓BCM 提供 ceph object storage使用  
+這邊選擇Base view  
+圖片1  
+
+預設帳號為`root`  
+密碼為之前所設定之IP  
+登入之後可以看到基礎管理畫面  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/55b71c0a-408c-4138-bc56-185c36990a35)
+
+
 
 #### 設定允許webhook   
 `Gitlab` > `Menu` > `Admin`  
