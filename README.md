@@ -289,7 +289,6 @@ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scrip
 chmod 700 get_helm.sh
 ./get_helm.sh
 
-cd tmp/
 vim demo.txt
 #輸入任意文字之後離開
 
@@ -321,3 +320,23 @@ reboot node001
 reboot node002
 ```
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/40599a20-beee-4054-b468-f1a3b01b6685)
+
+等待全部更新完畢之後  
+分別ssh登入這三node，確認功能是否更新  
+
+```
+ssh node002
+cat /demo.txt
+helm version
+exit 
+```
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/30e6286e-b803-4577-9443-47609d1f3754)
+
+```
+ssh node003
+cat /demo.txt
+helm version
+```
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/cee5887c-4ec7-42e9-a258-aaa73d93529a)
+
+
