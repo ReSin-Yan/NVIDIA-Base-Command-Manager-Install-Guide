@@ -1,6 +1,28 @@
 # NVIDIA-Base-Command-Manager-Install-Guide
 ## Base command簡易說明    
 
+Base command  
+主要挑戰  
+> 人工智慧投資的投資報酬率實現起來可能很緩慢。  
+> 管理和擴展人工智慧基礎設施可能具有挑戰性。  
+> 可用硬體常常超額認購且使用率不足。   
+> 缺乏企業級支援。  
+
+好處  
+> 透過用於加速資料中心的全範圍強化軟體來加快投資報酬率。  
+> 管理任意規模的集群，涵蓋 DGX 系統、其他 GPU、CPU 和雲端節點。  
+> 透過企業級作業排程和工作負載編排以及整合監控來最大限度地提高利用率。  
+> Base Command 由世界一流的 NVIDIA 企業支援的支援。  
+
+Base command Platfrom 是一個SaaS  
+主要目的是將DGX 連結起來(其中會用到mutiple node的功能，所以其中的網路必須要用到IB才可以)  
+他可以在NGC上面直接控管購買的DGX 平台  
+可以將服務直接在上面進行執行選擇GPU的數量  
+其中包含了大量功能，監控、排成管理、RBAC、整合NGC目錄、常用的jupyternotebook  
+
+Base command manager 是一套地端服務(需要安裝)，可以支持從單一節點到多節點的規劃面向，符合SLA規範  
+
+
 ## 環境準備以及說明  
 
 #### 需要準備之項目   
@@ -176,8 +198,9 @@ request-license
 其中Country Name,State or Province Name,Locality Name,Organization Name,Organizational Unit Name 這幾個參數為產生憑證所需要的資料  
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/3ae91c0c-4477-4d76-9bcf-85cd9252e9c0)
 
-#### BCM Lab(部屬compute node)   
+## BCM Lab   
 
+#### 部屬compute node   
 接來會簡單展示BCM的部屬服務  
 包含可以通過head快速更新computenode的方式  
 並且會以此環境建立出k8s平台  
@@ -221,6 +244,7 @@ ls
 這邊由於還沒跟BCM註冊，所以會重複多次的執行(每9秒)  
 我們需要手動選擇Manaully select node  
 之後選擇對應的節點  
+以下是一些執行執行的範例圖  
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/145286be-380c-40c4-8f1c-827d8345009e) 
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/9c4ce949-9b33-4451-a7a8-e88ccbd1495c)
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/f695b5a8-4b74-42a7-9f6b-3999a55a8e50)
@@ -230,3 +254,10 @@ ls
 
 等待時間  
 Headnode會將ramdisk放入虛擬機中  
+並且依照內容進行開機  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/c22d33fa-7c45-4791-aa07-2c0d259c56eb)
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/fa4718d5-eeeb-4837-8d32-69b548f0199d)  
+
+
+#### 建立新的softwareimages綁定category並且部屬至computenode  
+
