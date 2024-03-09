@@ -140,3 +140,36 @@ Ceph Dashboard讓BCM 提供 ceph object storage使用
 登入之後可以看到基礎管理畫面  
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/55b71c0a-408c-4138-bc56-185c36990a35)
 
+
+BCM基本安裝完成，接下來把授權輸入  
+使用SSH登入BCM  
+預設帳號為`root`  
+密碼為之前所設定之IP  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/ec8924a8-0f94-4282-9129-650f8296358e)  
+```
+request-license  
+```
+
+參數參考  
+大寫參數為預設  
+ | 設定 |  |
+|-------|-------|
+| Product Key | [Your License Key] |
+| Country Name | TW |
+| State or Province Name | Taipei |
+| Locality Name | Taipei |
+| Organization Name | BCMLab |
+| Organizational Unit Name | BCMLab |
+| Cluster Name | bcm01 |
+| MAC Address of primary head node | [Mac Address] |
+| HA | N,if you set ha for Y |
+| Submit certificate request | Y,if not gloabl net for N |
+| Install license | Y |
+
+其中最為重要的是MAC，BCM會去註冊授權，並且綁定MAC  
+所以選擇可以對外的網卡的MAC，並且建議記下此資料  
+如果需要重複練習，此MAC需要重複使用  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/ce265ff6-a557-4556-817c-6e4daa36de14)  
+
+
+其中Country Name,State or Province Name,Locality Name,Organization Name,Organizational Unit Name 這幾個參數為產生憑證所需要的資料  
