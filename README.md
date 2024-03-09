@@ -211,6 +211,7 @@ cmsh可以跟大部分得指令相容，也可以寫成bash腳本來大量控制
 快速指令腳本  
 快速指令腳本也可以自定義  
 ```
+cmsh
 [bcm10-headnode]% alias
 alias - goto -
 alias .. exit
@@ -261,3 +262,20 @@ Headnode會將ramdisk放入虛擬機中
 
 #### 建立新的softwareimages綁定category並且部屬至computenode  
 
+接下來測試headnode進行更新的功能  
+創建一個softwareimages，並且針對此software進行一些設計  
+然後將此softwareimage綁定到category上  
+然後將computenode1 computenode2配置此categroy  
+
+先在cmsh中複製images  
+```
+cmsh
+softwareimage
+ls
+clone default-image prod-image
+commit
+```
+
+
+先確定是否是root@bcm10-headnode user  
+有可能因為操作卡在cmsh上，需要先行退出  
