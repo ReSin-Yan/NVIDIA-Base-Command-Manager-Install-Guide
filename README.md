@@ -369,3 +369,4 @@ cluster Setting保持基本預設即可
 開始部屬  
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/86d722a8-9f44-4d90-9d90-92346d9a7680)
 
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/49131a61-b90b-471c-8b29-ebac79aa00cd)
