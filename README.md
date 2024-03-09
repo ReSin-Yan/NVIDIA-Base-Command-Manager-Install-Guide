@@ -132,7 +132,8 @@ DISK設定layout
 User Portal 是給使用者使用  
 Ceph Dashboard讓BCM 提供 ceph object storage使用  
 這邊選擇Base view  
-圖片1  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/6bb1db9c-6eef-4e34-9ba7-f650e1251beb)
+
 
 預設帳號為`root`  
 密碼為之前所設定之IP  
