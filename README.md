@@ -125,6 +125,8 @@ DISK設定layout
 
 ```
 
+#### 正式安裝  
+
 #### 設定允許webhook   
 `Gitlab` > `Menu` > `Admin`  
 左下角`Setting` > `Network` > `Outbound Request` > 將兩個都勾起  
