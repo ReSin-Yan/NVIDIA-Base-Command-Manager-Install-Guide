@@ -340,3 +340,22 @@ helm version
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/cee5887c-4ec7-42e9-a258-aaa73d93529a)
 
 
+#### 部屬kubernetes  
+點選Container> Kubernetes>kubernetes Wizard  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/02fc4213-39f9-4299-ac6c-c0ca6390de2a)
+
+cluster Setting保持基本預設即可  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/1137d089-389f-4179-b7a4-c72213ad7685)
+
+網路設定選擇internalnet(computenode的網段)  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/135b0aab-3156-49f4-9211-9d3016e40b61)
+
+選擇節點腳色(可以單獨選擇節點或是選擇catogroy)  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/ce0b194b-4d9c-42a3-b234-cdea9d5dcd80)
+
+選擇SC(可以後續再新增)  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/32246219-055a-4a91-8ec6-800d1a75b5e0)
+
+選擇要安裝的套件(必須要安裝的時候選擇，無法再從base view新增)  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/fd104ec8-b40c-4777-8fa3-11b99e5ab995) 
+
