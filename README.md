@@ -177,3 +177,6 @@ request-license
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/3ae91c0c-4477-4d76-9bcf-85cd9252e9c0)
 
 #### BCM Lab(部屬compute node)   
+
+接來會簡單展示BCM的部屬服務  
+包含可以通過head快速更新computenode的方式  
