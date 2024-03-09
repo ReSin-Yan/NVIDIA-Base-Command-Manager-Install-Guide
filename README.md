@@ -180,3 +180,50 @@ request-license
 
 接來會簡單展示BCM的部屬服務  
 包含可以通過head快速更新computenode的方式  
+並且會以此環境建立出k8s平台  
+
+大部分操作可以用指令`cmsh`來進行配置   
+cmsh可以跟大部分得指令相容，也可以寫成bash腳本來大量控制  
+
+快速指令腳本  
+快速指令腳本也可以自定義  
+```
+[bcm10-headnode]% alias
+alias - goto -
+alias .. exit
+alias / home
+alias ? help
+alias ds device status
+alias ls list
+```
+
+測試環境中準備三台虛擬機  
+在device中複製三台虛擬機  
+```
+device
+clone node001 node002
+..
+clone node001 node003
+..
+commit
+ls
+```
+可以看到總共有兩台node被我們創建出來  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/5c274979-af36-412a-b53b-a72fc82dc155)
+
+開啟三台虛擬機的電源  
+注意需要放在同一段網段上  
+打開虛擬機的web console  
+過一段秒數會自動選擇  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/5eedd27d-9f88-482f-9c6f-da20588f2bac)
+
+接下來會跳到node選擇中  
+這邊由於還沒跟BCM註冊，所以會重複多次的執行(每9秒)  
+我們需要手動選擇Manaully select node  
+之後選擇對應的節點  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/145286be-380c-40c4-8f1c-827d8345009e) 
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/9c4ce949-9b33-4451-a7a8-e88ccbd1495c)
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/f695b5a8-4b74-42a7-9f6b-3999a55a8e50)
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/09205406-cf0f-448a-bdfe-6945260014c5)
+
+
