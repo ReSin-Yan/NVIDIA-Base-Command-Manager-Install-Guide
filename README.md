@@ -42,6 +42,16 @@ Head可以準備多台搭建成HA環境
 ## 正式安裝             
 #### 申請授權,ISO下載  
 
+建立帳號  
+[網址](https://customer.brightcomputing.com/Customer-Login)  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/a47d54e7-17d3-476c-a721-406f1be37829)
+拿到授權之後下載  
+選擇自己熟悉的linux版本  
+[下載](https://customer.brightcomputing.com/Download)
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/87de1ba2-9c94-4261-979f-ae7a595d5fe1)
+
+
+
 #### 正式安裝  
 將ISO掛給虛擬機    
 ![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(1).png)   
@@ -369,6 +379,8 @@ cluster Setting保持基本預設即可
 開始部屬  
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/86d722a8-9f44-4d90-9d90-92346d9a7680)
 
+等待部屬完畢  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/138e147a-f95c-48d6-af66-08b471ba3e4e)
 
 
 ```
