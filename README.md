@@ -275,7 +275,49 @@ ls
 clone default-image prod-image
 commit
 ```
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/3c8f140f-961d-40e3-a756-b29fd435c1dd)  
 
 
 先確定是否是root@bcm10-headnode user  
 有可能因為操作卡在cmsh上，需要先行退出  
+嘗試隨意安裝一個套件(這邊安裝helm)  
+並且隨意新增一個檔案  
+```
+cm-chroot-sw-img /cm/images/prod-image/
+apt-get update
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+cd tmp/
+vim demo.txt
+#輸入任意文字之後離開
+
+exit
+```
+
+使用cmsh  
+配置catogroy  
+
+```
+cmsh
+category
+clone default prod
+set softwareimage prod-image
+commit
+ls
+```
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/da36616a-a6f2-409b-ab93-50c685c2b47a)
+
+配置computenode  
+```
+cmsh
+device
+set node001 category prod
+set node002 category prod
+commit
+ls
+reboot node001
+reboot node002
+```
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/40599a20-beee-4054-b468-f1a3b01b6685)
