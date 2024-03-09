@@ -1,4 +1,4 @@
-![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/895763bc-05c4-447e-bc6e-bf53c2ef01e1)# NVIDIA-Base-Command-Manager-Install-Guide
+# NVIDIA-Base-Command-Manager-Install-Guide
 ## Base command簡易說明    
 
 ## 環境準備以及說明  
