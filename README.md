@@ -140,19 +140,3 @@ Ceph Dashboard讓BCM 提供 ceph object storage使用
 登入之後可以看到基礎管理畫面  
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/55b71c0a-408c-4138-bc56-185c36990a35)
 
-
-
-#### 設定允許webhook   
-`Gitlab` > `Menu` > `Admin`  
-左下角`Setting` > `Network` > `Outbound Request` > 將兩個都勾起  
- ``  
-
-![img](https://github.com/ReSin-Yan/Kubernetes-Opensource-Project/blob/main/CICD/Jenkins/cicd/input%20token.PNG)   
-
-
-
-
-![img](https://github.com/ReSin-Yan/Kubernetes-Opensource-Project/blob/main/CICD/Jenkins/cicd/addnode2.PNG)   
-
-
-
