@@ -19,6 +19,7 @@ Head可以準備多台搭建成HA環境
 
 ## 正式安裝             
 #### 申請授權,ISO下載  
+
 #### 正式安裝  
 將ISO掛給虛擬機    
 ![img](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/blob/main/img/bcm%20(1).png)   
@@ -125,7 +126,7 @@ DISK設定layout
 
 ```
 
-#### 正式安裝 
+#### 授權、基本登入設定   
 
 可以看到三個連結  
 其中Base view 是給管理員使用  
@@ -173,3 +174,6 @@ request-license
 
 
 其中Country Name,State or Province Name,Locality Name,Organization Name,Organizational Unit Name 這幾個參數為產生憑證所需要的資料  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/3ae91c0c-4477-4d76-9bcf-85cd9252e9c0)
+
+#### BCM Lab(部屬compute node)   
