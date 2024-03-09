@@ -357,5 +357,15 @@ cluster Setting保持基本預設即可
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/32246219-055a-4a91-8ec6-800d1a75b5e0)
 
 選擇要安裝的套件(必須要安裝的時候選擇，無法再從base view新增)  
+測試環境沒有GPU，所以GPU相關套件功能都未開啟  
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/fd104ec8-b40c-4777-8fa3-11b99e5ab995) 
+
+選擇addons(必須安裝的時候選擇，無法再從base view新增)  
+測試環境主要為了測試安裝過程，並沒有詳細把所有功能更on起來  
+所以單純選擇一些比較用的到的功能  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/d374b05f-3fe2-4287-b382-c64754fe7b0d)
+
+勾選Ready to deployment  
+開始部屬  
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/86d722a8-9f44-4d90-9d90-92346d9a7680)
 
