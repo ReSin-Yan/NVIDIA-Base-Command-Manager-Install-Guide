@@ -225,5 +225,8 @@ ls
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/9c4ce949-9b33-4451-a7a8-e88ccbd1495c)
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/f695b5a8-4b74-42a7-9f6b-3999a55a8e50)
 ![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/09205406-cf0f-448a-bdfe-6945260014c5)
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/5a27813d-64bf-47ef-b1e0-480a471a74a0)
+![image](https://github.com/ReSin-Yan/NVIDIA-Base-Command-Manager-Install-Guide/assets/22570422/073e075d-dcc9-4a55-a23b-e562d40e9548)
 
-
+等待時間  
+Headnode會將ramdisk放入虛擬機中  
